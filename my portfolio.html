@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilma Naaz - Portfolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url(back.jpg);
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-image: url(section1.jpg);
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: cyan;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: cyan;
+        }
+        .hero {
+            font-size: 40px;
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+            background-image: url(back.jpg);
+        }
+        .flowing-text {
+            font-size: 25px;
+            color: cyan;
+            animation: glow 2s infinite alternate;
+        }
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 0 15px cyan;
+            transition: transform 0.3s;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+        .coll {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 0 15px cyan;
+            transition: transform 0.3s;
+        }
+        .coll:hover {
+            transform: scale(1.1);
+        }
+        .skil {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 0 15px cyan;
+            transition: transform 0.3s;
+        }
+        .skil:hover {
+            transform: scale(1.1);
+        }
+        .intern {
+            width: 250px;
+            height: 250px;
+            border-radius: 10%;
+            margin-top: 20px;
+            box-shadow: 0 0 15px cyan;
+            transition: transform 0.3s;
+        }
+        .intern:hover:hover {
+            transform: scale(1.1);
+        }
+        .buttons .btn {
+            height:10px;
+            font-size: 18px;
+            display: inline-block;
+            border-radius: 40px;
+            padding: 20px 20px;
+            margin: 30px;
+            text-decoration:none;
+            color: white;
+            border: 2px solid cyan;
+            transition: 0.3s;
+        }
+        .buttons .btn:hover {
+            background: cyan;
+            color: black;
+        }
+        section {
+            margin: 40px;
+            padding: 20px;
+            border: 2px solid cyan;
+            border-radius: 10px;
+            box-shadow: 0 0 15px cyan;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: scale(1.05);
+            background-image:url(section.jpg);
+            box-shadow: 0 0 25px magenta;
+        }
+        h2 {
+            color: cyan;
+            text-shadow: 0 0 10px cyan;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-image: url(section.jpg)
+            margin-top: 20px;
+        }
+        footer p {
+            color: cyan;
+            font-size: 14px;
+        }
+        @keyframes glow {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Ilma Naaz</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="content">
+            <h1 style="font-size: "40px">Hi, I'm <span class="neon">Ilma Naaz</span></h1>
+            <p class="flowing-text">Network Security Expert</p>
+            <img src="meri.jpg" alt="Profile Photo" class="profile-pic">
+            <div class="buttons">
+                <a href="resume.html" class="btn">view Resume</a>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </section> 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an IT graduate with a strong foundation in IT technologies, programming languages, information security, and cybersecurity. I am passionate about learning and continuously seeking opportunities to enhance my skills in software analysis, data management, and related fields.
+
+            I have gained hands-on experience through various certifications and internships, particularly in Python programming and cloud-based technologies.
+            
+            My academic journey, along with my active participation in extracurricular activities, highlights my dedication to both personal and professional growth. Currently, I am pursuing a Master's in Computer Applications (MCA) to specialize further in emerging IT trends, with the goal of contributing to innovative technological solutions in the industry.</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Invertis University, Bareilly - Pursuing MCA (2024)</li>
+            <li>Teerthanker Mahaveer University, Moradabad - BCA (2021 - 2024)</li>
+            <li>St. Paul's School, Rampur - Intermediate (2020 -2021)</li>
+            <li>St. Paul's School, Rampur - High School (2018 - 2019)</li>
+        </ul>
+        <img src="coll.jpg" alt="collage" class="coll">
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, C, HTML, CSS, Java</li>
+            <li>Database Management: MySQL</li>
+            <li>Cloud Technology: AWS</li>
+            <li>Cybersecurity</li>
+            <li>Leadership and Communication</li>
+            <li>Problem-Solving</li>
+        </ul>
+        <img src="skiiiii.jpg" alt="Profile Photo" class="skil">
+    </section>
+    <section id="internship">
+        <h2>Internship</h2>
+        <p>Codsoft - Python Programming Intern (June 2024 - July 2024)</p>
+        <p>Developed dynamic websites, enhanced database management, and worked on GUI-based projects.</p>
+        <img src="internship.jpg" alt="intern" class="intern">
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Phone: 8218273776</p>
+        <p>Email: ilmaanaaz3006@gmail.com</p>
+        <p>Location: Moradabad, Uttar Pradesh</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ilma-naaz-071469252">My LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/Ilma007">My GitHub</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Ilma Naaz. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const neonText = document.querySelector(".neon");
+            let colors = ["cyan", "magenta", "yellow", "lime", "red", "lavender", "green", "purple", "blue"];
+            let i = 0;
+            setInterval(() => {
+                neonText.style.color = colors[i];
+                i = (i + 1) % colors.length;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ilma Naaz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #c72da8,#55ce3a ,#f91313);
+            color: #f6f0f0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-image:url(section.jpg);
+            box-shadow: 0 4px 10px rgba(246, 4, 4, 0.2);
+            border-radius: 10px;
+            border-color: 2px solid#000000;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #b6b3b5;
+            color: rgb(252, 252, 252);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h2 {
+            color:#fbf9fb;
+            border-bottom: 2px solid #ff0464;
+            display: inline-block;
+            margin-bottom: 10px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .skills, .certifications, .internship, .volunteering {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .skills img, .certifications img, .volunteering img ,.internship img{
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+            border-color:2px rgb(1, 1, 160);
+            box-shadow: 0 15px 17px rgba(58, 2, 243, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills img:hover, .certifications img:hover, .volunteering img:hover,.internship img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 14px 10px #2302f933;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        ul li {
+            list-style: none;
+            margin-bottom: 5px;
+            padding: 5px;
+            background: #dea0e7;
+            border: 1px solid #560606;
+            border-radius: 5px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        ul li:hover {
+            background: #dea0e7;
+            color: rgb(15, 15, 15);
+        }
+
+        a {
+            color: #1708f4;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        a:hover {
+            color: #1708f4;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #b6b3b5;
+            color: #000000;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="me.jpeg" alt="Ilma Naaz">
+            <div>
+                <h1>Ilma Naaz</h1>
+                <p>Network Security Expert</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Profile Summary</h2>
+                <p>
+                    I am an IT graduate with a strong foundation in IT technologies, programming languages, information security, and cybersecurity. I am passionate about learning and continuously seeking opportunities to enhance my skills in software analysis, data management, and related fields.
+
+                    I have gained hands-on experience through various certifications and internships, particularly in Python programming and cloud-based technologies.
+                    
+                    My academic journey, along with my active participation in extracurricular activities, highlights my dedication to both personal and professional growth. Currently, I am pursuing a Master's in Computer Applications (MCA) to specialize further in emerging IT trends, with the goal of contributing to innovative technological solutions in the industry.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Contact</h2>
+                <p>Phone: 8218273776</p>
+                <p>Email: ilmaanaaz3006@gmail.com</p>
+                <p>Location: Moradabad, Uttar Pradesh</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ilma-naaz-071469252"> View Profile</a></p>
+                <p>github: <a href="https://github.com/ilma007"> View Profile</a></p>
+            </div>
+
+            <div class="section">
+                <h2>Core Competencies</h2>
+                <div class="skills">
+                    <div>
+                        <img src="python.png" alt="Python">
+                        <p><b>Python</b><br>A versatile, high-level programming language known for its simplicity and readability. It is widely used in web development, data science, automation, AI/ML, and backend development.</p>
+                    </div>
+                    <div>
+                        <img src="html_css.png" alt="HTML, CSS">
+                        <p><b>HTML, CSS</b><br>HTML (HyperText Markup Language) structures web pages, while CSS (Cascading Style Sheets) styles them. Together, they form the foundation of front-end web development, ensuring responsive and visually appealing websites.</p>
+                    </div>
+                    <div>
+                        <img src="dbms.webp" alt="Database Management">
+                        <p><b>Database Management</b><br>A system that manages, organizes, and retrieves data efficiently. It includes SQL-based relational databases (e.g., MySQL, PostgreSQL) and NoSQL databases (e.g., MongoDB, Firebase).</p>
+                    </div>
+                    <div>
+                        <img src="aws.jpg" alt="Cloud Technology">
+                        <p><b>Cloud Technology: AWS</b><br> Provides on-demand computing resources, such as storage, servers, and databases, over the internet. Popular platforms include AWS, Azure, and Google Cloud, enabling scalable and cost-effective IT solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Certifications</h2>
+                <div class="certifications">
+                    <div>
+                        <img src="mysql.png" alt="MySQL">
+                        <p>MySQL - 2024</p>
+                    </div>
+                    <div>
+                        <img src="awscer.png" alt="AWS Academy">
+                        <p>Grade AWE Academy - 2023</p>
+                    </div>
+                    <div>
+                        <img src="awscer.png" alt="Understanding AWS">
+                        <p>Understanding AWS - 2023</p>
+                    </div>
+                    <div>
+                        <img src="pythoncer.jpg" alt="Python Training">
+                        <p>Python 3.4.3 Training - 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Internship</h2>
+                <div class="internship">
+                        <img src="internship.jpg" alt="Python Training">
+                    <p>
+                    Internship<br>
+                    Codsoft - Front-End Programming Intern (June 2024 - July 2024)<br>
+                    I successfully completed 4 weeks of virtual internship program in python programming from Codsoft !!!! where i learnt lots of new skills about python and working on gui functions and make some projects like gui based TO-DO List , Calculator,ROCK-PAPER-scissor like projects ...!!
+                </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Volunteering Projects</h2>
+                <div class="volunteering">
+                    <div>
+                        <img src="hackathon.png" alt="International Hackathon">
+                        <p>Participated in International Hackathon</p>
+                    </div>
+                    <div>
+                        <img src="hackathon.png" alt="Brain Marathon">
+                        <p>Competed in Brain Marathon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2025 Ilma Naaz. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>
